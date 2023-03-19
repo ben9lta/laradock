@@ -8,3 +8,15 @@ docker run --rm \
     laravelsail/php82-composer \
     composer install --ignore-platform-reqs
 </pre>
+
+<h1>Running</h1>
+<pre>
+    alias sail=./vendor/bin/sail
+    sail up -d
+    sail php artisan key:generate
+    sail php artisan migrate
+    sail yarn install
+    sail yarn run dev
+</pre>
+
+ <a href="http://localhost">localhost</a>
